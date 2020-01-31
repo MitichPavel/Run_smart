@@ -1,0 +1,27 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url('../img/bg/second-bg.jpg') center (center/cover) no-repeat;
+    @include tablet {
+        padding: 74px 0 74px 40px;
+    }
+    @include mobile {
+        min-height: 480px;
+        padding: 50px 40px;
+    }
+    &__descr {
+        margin-top: 85px;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+        color: #ffffff;
+        @include tablet {
+            margin-top: 65px;
+            font-size: 18px;
+        }
+        @include mobile {
+            font-size: 15px;
+            line-height: 1.4;
+		}
+    }
+}

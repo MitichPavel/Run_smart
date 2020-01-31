@@ -1,0 +1,26 @@
+@import 'base/variables';
+@import 'base/mixins';
+* {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container{
+	max-width: 950px;
+	margin: 0 auto;
+	@include desktop {
+		max-width: 890px;
+	}
+	@include laptop {
+		max-width: 708px;
+	}
+	@include tablet {
+		max-width: 550px;
+	}
+}
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/title';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
