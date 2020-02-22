@@ -54,6 +54,9 @@
 		margin-right: -20px;
 		&_active {
 			display: flex;
+			@include desktop {
+				justify-content: center;
+			}
 		}
 		@include mobile {
 			margin-top: 30px;
