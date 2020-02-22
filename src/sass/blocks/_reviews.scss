@@ -1,0 +1,36 @@
+.reviews {
+    &__list {
+        padding: 70px 55px 71px 0;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__wrapper {
+        margin-left: 62px;
+    }
+    &__name {
+        margin-bottom: 10px;
+        line-height: 1;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__achievement {
+        margin-bottom: 19px;
+        line-height: 1;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__message {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+}
