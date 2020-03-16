@@ -6,6 +6,9 @@
     @include tablet {
         width: 240px;
     }
+    @include mobile {
+        margin-top: 20px;
+    }
     input {
         height: 50px;
         border-radius: 5px;
@@ -21,6 +24,13 @@
         }
         @include tablet {
             height: 38px;
+        }
+        @include mobile {
+            height: 36px;
+        }
+
+        &_mt25 {
+            margin-top: 25px;
         }
     }
 }
