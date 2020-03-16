@@ -124,7 +124,36 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+
+	function validateForms(form){
+		$(form).validate({
+			rules: {
+				name: 'required',
+				phone: 'required',
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Пожалуйста, введите свое имя",
+				phone: "Пожалуйста, введите свой номер телефона",
+				email: {
+					required: "Пожалуйста, введите свою почту",
+					email: "Неверный формат почты"
+				}
+			}
+		});
+	};
+
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
+
+	$('input[name=phone]').mask("+7 (999) 999-99-99")
 });
+
+
 
 // const slider = tns({
 // 	container: '.carousel__inner',
