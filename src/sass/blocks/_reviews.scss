@@ -1,78 +1,78 @@
 .reviews {
-    &__list {
-        padding: 70px 55px 71px 0;
-        @include laptop {
-            padding-left: 20px;
-        }
-        @include tablet {
-            padding-right: 20px;
-        }
-    }
-    &__item {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 100px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        @include mobile {
-            margin-bottom: 40px;
-        }
-    }
-    &__wrapper {
-        margin-left: 62px;
-        @include tablet {
-            margin-left: 20px;
-        }
-    }
-    &__name {
-        margin-bottom: 10px;
-        line-height: 1;
-        color: #0d0d0d;
-        font-size: 18px;
-        font-weight: 700;
-        &_mobile-unvisible {
-            display: none;
-        }
-    }
-    &__achievement {
-        margin-bottom: 19px;
-        line-height: 1;
-        color: #646464;
-        font-size: 14px;
-        font-weight: 300;
-        &_mobile-unvisible {
-            display: none;
-        }
-    }
-    &__message {
-        color: #0d0d0d;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 19px;
-        @include mobile {
-            margin-top: 20px;
-        }
-    }
-    &__avatar {
-        &_mobile-unvisible {
-            @include mobile {
-                display: none;
-            }
-        }
-        @include laptop {
-            width: 130px;
-            height: 130px;
-        }
-        @include tablet {
-            width: 70px;
-            height: 70px;
-        }
-    }
-    &__customer-data {
-        display: none;
-        @include mobile {
-            display: flex;
-        }
-    }
+	&__list {
+		padding: 70px 55px 71px 0;
+		@include laptop {
+			padding-left: 20px;
+		}
+		@include tablet {
+			padding-right: 20px;
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 100px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@include mobile {
+			margin-bottom: 40px;
+		}
+	}
+	&__wrapper {
+		margin-left: 62px;
+		@include tablet {
+			margin-left: 20px;
+		}
+	}
+	&__name {
+		margin-bottom: 10px;
+		line-height: 1;
+		color: #0d0d0d;
+		font-size: 18px;
+		font-weight: 700;
+		&_mobile-unvisible {
+			display: none;
+		}
+	}
+	&__achievement {
+		margin-bottom: 19px;
+		line-height: 1;
+		color: #646464;
+		font-size: 14px;
+		font-weight: 300;
+		&_mobile-unvisible {
+			display: none;
+		}
+	}
+	&__message {
+		color: #0d0d0d;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 19px;
+		@include mobile {
+			margin-top: 20px;
+		}
+	}
+	&__avatar {
+		&_mobile-unvisible {
+			@include mobile {
+				display: none;
+			}
+		}
+		@include laptop {
+			width: 130px;
+			height: 130px;
+		}
+		@include tablet {
+			width: 70px;
+			height: 70px;
+		}
+	}
+	&__customer-data {
+		display: none;
+		@include mobile {
+			display: flex;
+		}
+	}
 }
